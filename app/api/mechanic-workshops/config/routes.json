@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mechanic-workshops",
+      "handler": "mechanic-workshops.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mechanic-workshops/count",
+      "handler": "mechanic-workshops.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mechanic-workshops/:id",
+      "handler": "mechanic-workshops.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mechanic-workshops",
+      "handler": "mechanic-workshops.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mechanic-workshops/:id",
+      "handler": "mechanic-workshops.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mechanic-workshops/:id",
+      "handler": "mechanic-workshops.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

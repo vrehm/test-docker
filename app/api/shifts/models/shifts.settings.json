@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shifts",
+  "info": {
+    "name": "shifts",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bus": {
+      "via": "shifts",
+      "model": "buses"
+    },
+    "shift_start": {
+      "type": "time"
+    },
+    "shift_end": {
+      "type": "time"
+    },
+    "date": {
+      "type": "date"
+    },
+    "duration_hours": {
+      "type": "integer"
+    },
+    "distance": {
+      "type": "integer"
+    },
+    "fuel_consumption": {
+      "type": "decimal"
+    },
+    "driver": {
+      "via": "shifts",
+      "model": "drivers"
+    }
+  }
+}

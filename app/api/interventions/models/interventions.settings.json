@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "interventions",
+  "info": {
+    "name": "interventions",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mechanic": {
+      "model": "mechanics"
+    },
+    "mechanic_workshop": {
+      "model": "mechanic-workshops"
+    },
+    "date": {
+      "type": "date"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "to_do",
+        "resolved"
+      ]
+    },
+    "duration_hours": {
+      "type": "integer"
+    },
+    "bus": {
+      "via": "interventions",
+      "model": "buses"
+    }
+  }
+}

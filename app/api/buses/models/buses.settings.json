@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "buses",
+  "info": {
+    "name": "buses",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "total_kms": {
+      "type": "integer"
+    },
+    "total_consumption": {
+      "type": "integer"
+    },
+    "total_shifts": {
+      "type": "integer"
+    },
+    "lifetime": {
+      "type": "integer"
+    },
+    "is_operational": {
+      "type": "boolean"
+    },
+    "incidents": {
+      "via": "bus",
+      "collection": "incidents"
+    },
+    "interventions": {
+      "via": "bus",
+      "collection": "interventions"
+    },
+    "shifts": {
+      "via": "bus",
+      "collection": "shifts"
+    }
+  }
+}

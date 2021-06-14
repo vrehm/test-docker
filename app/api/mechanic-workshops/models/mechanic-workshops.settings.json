@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mechanic_workshops",
+  "info": {
+    "name": "mechanic_workshops",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mechanics": {
+      "via": "mechanic_workshop",
+      "collection": "mechanics"
+    },
+    "address": {
+      "type": "string"
+    },
+    "total_mechanics": {
+      "type": "integer"
+    }
+  }
+}

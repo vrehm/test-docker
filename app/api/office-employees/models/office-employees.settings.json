@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "office_employees",
+  "info": {
+    "name": "office_employees",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "office_employee"
+    }
+  }
+}
